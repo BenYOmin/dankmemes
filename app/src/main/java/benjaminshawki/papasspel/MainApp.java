@@ -6,5 +6,29 @@ package benjaminshawki.papasspel;
  */
 public class MainApp {
 
+    private static MainApp mainApp;
+    private PappasSpel pappasSpel;
+    private Player player;
 
+    public MainApp() {
+        mainApp = this;
+        this.pappasSpel = new PappasSpel();
+        this.player = new Player();
+    }
+
+    public static void main(String[] args) {
+        new MainApp();
+    }
+
+    public static MainApp getInstance() {
+        return mainApp;
+    }
+
+    public PappasSpel getPappasSpel() {
+        return pappasSpel;
+    }
+
+    public void setPappasSpel(PappasSpel pappasSpel) {
+        this.pappasSpel = pappasSpel;
+    }
 }
