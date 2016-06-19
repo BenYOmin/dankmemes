@@ -13,7 +13,6 @@ public class MainApp {
     public MainApp() {
         mainApp = this;
         this.pappasSpel = new PappasSpel();
-        this.player = new Player();
     }
 
     public static void main(String[] args) {

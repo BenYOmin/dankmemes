@@ -5,7 +5,6 @@ package benjaminshawki.papasspel.enums;
  * @version --
  */
 public enum Rank {
-    ACE("Ace"),
     TWO("Two"),
     THREE("Three"),
     FOUR("Four"),
@@ -17,7 +16,8 @@ public enum Rank {
     TEN("Ten"),
     JACK("Jack"),
     QUEEN("Queen"),
-    KING("King");
+    KING("King"),
+    ACE("Ace");
 
     private String name;
 
